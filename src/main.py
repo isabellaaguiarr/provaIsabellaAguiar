@@ -8,7 +8,7 @@ from meuPacote.atletas import getCountry
 from meuPacote.atletas import getMedal
 from meuPacote.email import enviar_email
 
-def mein(): 
+def main(): 
     file = BASE_DIR + '/data/nomesAtletas.xlsx'
 
     df = pd.read_excel(file)
@@ -52,8 +52,6 @@ def mein():
 
     ####################
 
-def main():
-  
     usuario = os.environ.get("YAHOO_USER")
     senha = os.environ.get("YAHOO_PASSWORD")
     
