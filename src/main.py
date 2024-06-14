@@ -50,12 +50,13 @@ def main():
 
     df["country"]
 
-    ####################
+    #################### 
+
 
     usuario = os.environ.get("YAHOO_USER")
     senha = os.environ.get("YAHOO_PASSWORD")
     
-    destinatario = "laerte.takeuti@yahoo.com","isabellaaguiar.0912@yahoo.com"
+    destinatario = "laerte.takeuti@yahoo.com"
     assunto = "Prova AP2"
     mensagem = """
 i. 
@@ -68,7 +69,8 @@ iii.
 -Oskar Thiede.
 -Idade:69.
 iv.
-Nessa amostra 13 paises ganharam medalhas.
+Nessa amostra 38 paises ganharam.
+#Isabella Aguiar
 """
     enviar_email(usuario, senha, destinatario, assunto, mensagem)
 
